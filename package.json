@@ -3,12 +3,11 @@
     "author": "ging-moocs",
     "license": "GNU",
     "version": "0.0.0",
-    "engines": { "node": "12.16" },
     "info": {
         "githubURL": "ging-moocs/MOOC_node_mod3-bbdd_entrega",
-        "serverUrl": "https://autocorector.dit.upm.es/",
-        "courseId": "2",
-        "assignmentId": "9"
+        "serverUrl": "https://moocauto.dit.upm.es/",
+        "courseId": "452",
+        "assignmentId": "231"
     },
     "scripts": {
         "migrate": "sequelize db:migrate --url sqlite://$(pwd)/db.sqlite",
@@ -17,9 +16,13 @@
         "seed_win": "sequelize db:seed:all --url sqlite://%cd%/db.sqlite",
         "start": "node main.js"
     },
+    "engines": {
+        "node": "^16.8.0",
+        "npm": "^7.21.0"
+    },
     "dependencies": {
-        "sequelize": "^5.21.3",
-        "sequelize-cli": "^5.5.0",
-        "sqlite3": "^4.0.9"
+        "sequelize": "^6.6.5",
+        "sequelize-cli": "^6.2.0",
+        "sqlite3": "^5.0.2"
     }
 }
