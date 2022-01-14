@@ -7,7 +7,7 @@
         "githubURL": "ging-moocs/MOOC_node_mod3-bbdd_entrega",
         "serverUrl": "https://moocauto.dit.upm.es/",
         "courseId": "452",
-        "assignmentId": "231"
+        "assignmentId": "292"
     },
     "scripts": {
         "migrate": "sequelize db:migrate --url sqlite://$(pwd)/db.sqlite",
