@@ -2,9 +2,9 @@
 <img  align="right" width="150" style="float: right;" src="https://miriadax.net/miriadax-theme/images/custom/logo_miriadax_new.svg">
 <br/><br/><br/>
 
-# Módulo 3: Modelos de datos de datos con relaciones entre tablas, relaciones 1:1, 1:N y N:N, migraciones - Entrega P2P: Bases de datos
+# Módulo 3: Modelos de datos: Bases de datos
 
-Versión: 10 de octubre de 2021
+Versión: 14 de enero de 2022
 
 ## Objetivos
  * Afianzar los conocimientos obtenidos sobre el desarrollo de programas interactivos con Node.js
@@ -17,7 +17,7 @@ Esta práctica consiste en la ampliación del proyecto de gestión de usuarios y
 
 ## Descargar el código del proyecto
 
-Es necesario utilizar la **versión 12 de Node.js** para el desarrollo de esta práctica. El proyecto debe clonarse en el ordenador desde el que se está trabajando: 
+Es necesario utilizar la **versión 16 de Node.js**  (> 16.8) para el desarrollo de esta práctica. El proyecto debe clonarse en el ordenador desde el que se está trabajando: 
 
 ```
 $ git clone https://github.com/ging-moocs/MOOC_node_mod3-bbdd_entrega
