@@ -14,7 +14,7 @@ const T_TEST = 2 * 60; // Time between tests (seconds)
 let error_critical = null;
 
 //TESTS
-describe("(Prechecks): Comprobando dependencias...", function () {
+describe("(Prechecks) Entrega5_BBDD_Dependencias", function () {
 
     this.timeout(T_TEST * 1000);
 
@@ -33,7 +33,7 @@ describe("(Prechecks): Comprobando dependencias...", function () {
 
 });
 
-describe("(Prechecks): Comprobaciones del modelo", function () {
+describe("(Prechecks) Entrega5_BBDD_Modelos", function () {
 
     this.timeout(T_TEST * 1000);
 
@@ -238,7 +238,10 @@ describe("(Checks) Pruebas funcionales", function () {
                 }
                 error_std.should.be.equal("");
                 should.not.equal(q, null);
-            } catch (err) { error_critical = err;}
+            } catch (err) { 
+                error_critical = err;
+                should.not.exist(error_critical);
+            }
         }
     });
 
@@ -285,7 +288,10 @@ describe("(Checks) Pruebas funcionales", function () {
                 }
                 error_std.should.be.equal("");
                 i.should.be.at.most(number_of_tries_to_check_random - 1);
-            } catch (err) { error_critical = err;}
+            } catch (err) { 
+                error_critical = err;
+                should.not.exist(error_critical);
+            }
         }
     });
 
@@ -337,7 +343,10 @@ describe("(Checks) Pruebas funcionales", function () {
             
                 error_std.should.be.equal("");
                 should.not.equal(q, null);
-            } catch (err) { error_critical = err;}
+            } catch (err) { 
+                error_critical = err;
+                should.not.exist(error_critical);
+            }
         }
     });
 
@@ -390,7 +399,10 @@ describe("(Checks) Pruebas funcionales", function () {
                 Utils.search('Score', output).should.be.equal(true);
                 Utils.search('5', output).should.be.equal(true);
                 error_std.should.be.equal("");
-            } catch (err) { error_critical = err;}
+            } catch (err) { 
+                error_critical = err;
+                should.not.exist(error_critical);
+            }
         }
     });
 
@@ -435,7 +447,10 @@ describe("(Checks) Pruebas funcionales", function () {
                 Utils.search('Score', output).should.be.equal(true);
                 Utils.search('0', output).should.be.equal(true);
                 error_std.should.be.equal("");
-            } catch (err) { error_critical = err;}
+            } catch (err) { 
+                error_critical = err;
+                should.not.exist(error_critical);
+            }
         }
     });
 
@@ -473,7 +488,10 @@ describe("(Checks) Pruebas funcionales", function () {
             if (!Utils.search('REFERENCES', res2[0][0].sql)) 
                 this.msg_err += '. Has creado las relaciones entre los modelos Score y User en la migración?';
             Utils.search('REFERENCES', res2[0][0].sql).should.be.equal(true);
-        } catch (err) { error_critical = err;}
+        } catch (err) {  
+            error_critical = err;
+            should.not.exist(error_critical);
+        }
 
     });
 
@@ -530,7 +548,10 @@ describe("(Checks) Pruebas funcionales", function () {
                 should.not.equal(u, null);
                 should.not.equal(u.scores.length, 0);
                 u.scores[0].wins.should.be.equal(0);
-            } catch (err) { error_critical = err;}
+            } catch (err) { 
+                error_critical = err;
+                should.not.exist(error_critical);
+            }
         }
     });
 
@@ -605,7 +626,10 @@ describe("(Checks) Pruebas funcionales", function () {
                 should.not.equal(u, null);
                 should.not.equal(u.scores.length, 0);
                 u.scores[0].wins.should.be.equal(3);
-            } catch (err) { error_critical = err;}
+            } catch (err) { 
+                error_critical = err;
+                should.not.exist(error_critical);
+            }
         }
     });
 
@@ -676,7 +700,10 @@ describe("(Checks) Pruebas funcionales", function () {
                 if (posU2 > posU1)
                     this.msg_err += '. Están las puntuaciones ordenadas?';
                 (posU2 < posU1).should.be.equal(true);
-            } catch (err) { error_critical = err;}   
+            } catch (err) { 
+                error_critical = err;
+                should.not.exist(error_critical);
+            }   
         }
     });
 
