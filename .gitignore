@@ -3,3 +3,4 @@ user.json
 data
 yarn.lock
 *.sqlite
+package-lock.json

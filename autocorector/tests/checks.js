@@ -1,6 +1,6 @@
 // IMPORTS
 const path = require('path');
-const Utils = require('./testutils');
+const Utils = require("../utils/testutils");
 
 const node_modules = path.resolve(path.join(__dirname, "../", "node_modules"));
 const database = 'sqlite:db.sqlite';
