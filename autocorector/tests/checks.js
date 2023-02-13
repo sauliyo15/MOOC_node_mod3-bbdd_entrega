@@ -7,7 +7,7 @@ const database = 'sqlite:db.sqlite';
 const options = { logging: false};
 var sequelize, User, Quiz;
 const path_models = path.resolve(path.join(__dirname, "../model.js"));
-const path_assignment = path.resolve(path.join(__dirname, "../"));
+const path_assignment = path.resolve(path.join(__dirname, "../.."));
 
 const T_TEST = 2 * 60; // Time between tests (seconds)
 // CRITICAL ERRORS
