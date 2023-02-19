@@ -2,11 +2,11 @@
 const path = require('path');
 const Utils = require("../utils/testutils");
 
-const node_modules = path.resolve(path.join(__dirname, "../", "node_modules"));
+const node_modules = path.resolve(path.join(__dirname, "../../", "node_modules"));
 const database = 'sqlite:db.sqlite';
 const options = { logging: false};
 var sequelize, User, Quiz;
-const path_models = path.resolve(path.join(__dirname, "../model.js"));
+const path_models = path.resolve(path.join(__dirname, "../../model.js"));
 const path_assignment = path.resolve(path.join(__dirname, "../.."));
 
 const T_TEST = 2 * 60; // Time between tests (seconds)
