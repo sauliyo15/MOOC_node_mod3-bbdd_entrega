@@ -22,6 +22,8 @@ exports.help = (rl) =>
     > cf | fc        ## favourite: create
     > df | fd        ## favourite: delete
     >
+    > p              ## play
+
     > e              ## exit & return to shell`
   )
 

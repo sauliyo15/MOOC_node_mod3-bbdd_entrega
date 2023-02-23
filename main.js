@@ -4,6 +4,9 @@ const quiz = require("./cmds_quiz.js");
 const favs = require("./cmds_favs.js");
 const readline = require('readline');
 
+//Importamos el modulo para el juego
+const play = require("./cmds_play.js");
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -40,6 +43,8 @@ rl.on('line', async (line) => {
     else if (['lf', 'fl', 'f'].includes(cmd)) { await favs.list(rl);}
     else if (['cf', 'fc'].includes(cmd))      { await favs.create(rl);}
     else if (['df', 'fd'].includes(cmd))      { await favs.delete(rl);}
+
+    else if ('p' ===cmd)  { play.play(rl);}
 
     else if ('e'===cmd)  { rl.log('Bye!'); process.exit(0);}
     else                 {  rl.log('UNSUPPORTED COMMAND!');
