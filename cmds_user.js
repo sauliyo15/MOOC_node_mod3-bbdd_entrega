@@ -23,6 +23,8 @@ exports.help = (rl) =>
     > df | fd        ## favourite: delete
     >
     > p              ## play
+    >
+    > ls              ## list score
 
     > e              ## exit & return to shell`
   )

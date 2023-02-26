@@ -45,6 +45,7 @@ rl.on('line', async (line) => {
     else if (['df', 'fd'].includes(cmd))      { await favs.delete(rl);}
 
     else if ('p' ===cmd)  { play.play(rl);}
+    else if (['ls'].includes(cmd))      { await play.listScore(rl);}
 
     else if ('e'===cmd)  { rl.log('Bye!'); process.exit(0);}
     else                 {  rl.log('UNSUPPORTED COMMAND!');
