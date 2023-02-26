@@ -87,13 +87,13 @@ Quiz.belongsToMany(User, {
 
 //Relacion User-->Score (1:N)
 Score.belongsTo(User, {
-  as: "scores",
+  as: "scored",
   foreignKey: "userId",
   onDelete: "CASCADE",
 });
 
 User.hasMany(Score, {
-  as: "scored",
+  as: "scores",
   foreignKey: "userId",
 });
 
